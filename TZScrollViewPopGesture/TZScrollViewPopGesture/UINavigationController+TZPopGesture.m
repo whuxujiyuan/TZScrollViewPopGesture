@@ -73,7 +73,7 @@
     // 侧滑手势触发位置
     CGPoint location = [gestureRecognizer locationInView:self.view];
     CGPoint offSet = [gestureRecognizer translationInView:gestureRecognizer.view];
-    BOOL ret = (0 < offSet.x && location.x <= 40);
+    BOOL ret = (0 < offSet.x && location.x <= 10);
     // NSLog(@"%@ %@",NSStringFromCGPoint(location),NSStringFromCGPoint(offSet));
     return ret;
 }
