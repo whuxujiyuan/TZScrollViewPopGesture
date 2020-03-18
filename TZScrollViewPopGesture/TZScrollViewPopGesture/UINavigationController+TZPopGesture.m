@@ -92,8 +92,8 @@
             [self.tz_naviDelegate navigationController:navigationController didShowViewController:viewController animated:animated];
         }
     }
-    // 让系统的侧滑返回生效
-    self.interactivePopGestureRecognizer.enabled = YES;
+// 让系统的侧滑返回生效 FIX::不能生效，还是有fd_pop接管
+//    self.interactivePopGestureRecognizer.enabled = YES;
     if (self.childViewControllers.count > 0) {
         if (viewController == self.childViewControllers[0]) {
             self.interactivePopGestureRecognizer.delegate = self.tz_popDelegate; // 不支持侧滑
