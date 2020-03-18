@@ -93,7 +93,7 @@
         }
     }
 // 让系统的侧滑返回生效 FIX::不能生效，还是有fd_pop接管
-//    self.interactivePopGestureRecognizer.enabled = YES;
+    self.interactivePopGestureRecognizer.enabled = NO;
     if (self.childViewControllers.count > 0) {
         if (viewController == self.childViewControllers[0]) {
             self.interactivePopGestureRecognizer.delegate = self.tz_popDelegate; // 不支持侧滑
